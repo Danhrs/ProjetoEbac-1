@@ -1,0 +1,281 @@
+/*------------Base-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+.container{
+  margin: 0 auto;
+  width: 83%;
+}
+
+/*----------------header----------*/
+
+header{
+  padding: 33px 0;
+  background: #d49131;
+  color: #110f12;
+  font-size: 18px;
+}
+
+header nav li{
+  display: inline;
+  margin-left: 16px;
+  font-size: 18px;
+}
+
+header nav li a{
+  color: #ecf0f1;
+  text-decoration: none;
+}
+header nav li a:hover{
+  color: black;
+}
+header nav li a button{
+  background: #000000;
+  color: #ecf0f1;
+  width: 10rem;
+  height: 3rem;
+  font-weight: 700;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+header nav li a button:hover{
+  color: #000000;
+  background: #ecf0f1;
+  cursor: pointer;
+}
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*---------------- About ----------------*/
+
+.container-about{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  align-items: center;
+  gap: 3rem;
+  background: #ecf0e1;
+}
+
+.container-about h2{
+  border-bottom: 1px solid #000000;
+  padding-bottom: 3rem;
+}
+
+.container-about a{
+  border-top: 1px solid #000000;
+  padding-top: 3rem;
+}
+
+.container-about a button{
+  background: #000000;
+  color: #ecf0f1;
+  width: 10rem;
+  height: 3rem;
+  font-weight: 700;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.container-about a button:hover{
+  background: #d49131 ;
+  cursor: pointer;
+}
+
+
+/*---------------- Blog ----------------*/
+.container-blog{
+  padding-bottom: 5rem;
+}
+
+.container-blog h2{
+  padding-bottom: 5rem;
+}
+
+.articles{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.articles article{
+  width: 30%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ecf0e1;
+}
+
+.articles article img{
+  width: 20vw;
+  height: 30vh;
+}
+
+.articles article p{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.articles article .article-post{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.articles article .article-post button{
+  background: #d49131;
+  color: #ffff;
+  width: 10rem;
+  font-size: 1rem;
+  height: 3rem;
+  box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+.articles article .article-post button:hover{
+  background: #000000;
+  cursor: pointer;
+}
+
+/* ------------------ forum ------------------------ */
+#forum{
+  margin-bottom: 5rem;
+}
+
+.article-forum{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  gap: 5rem;
+  background: #ecf0e1;
+}
+
+.article-forum .article-img img{
+  width: 40vw;
+  height: 60vh;
+}
+
+.article-forum article{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+}
+
+.article-forum article button{
+  background: #d49131;
+  color: #ffff;
+  width: 13rem;
+  height: 3rem;
+  box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+.article-forum article button:hover{
+  background: #000000;
+  cursor: pointer;
+}
+
+/* =============== CONTACT ============== */
+
+#contact .container h2{
+  margin-bottom: 5rem;
+}
+
+#contact .container{
+  display: block;
+}
+
+.contact-methods{
+  display: flex;
+  justify-content: space-between;
+  background: #ecf0e1;
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+
+/* ============= FORM ================== */
+form input, form textarea, form button{
+  display: block;
+  width: 320px;
+  margin-bottom: 8px;
+  padding: 8px;
+  margin-top: 1rem;
+}
+
+form textarea{
+  resize: none;
+  height: 180px;
+}
+
+form button{
+  background: #d49131;
+  color: #ffff;
+  width: 13rem;
+  height: 3rem;
+  box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+form button:hover{
+  background: #000000;
+  cursor: pointer;
+}
+
+input:focus, textarea:focus{
+  outline-color: #ecf0e1;
+}
+
+/* ===========  social media ======== */
+
+.social .social-links li{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.social .social-links li i{
+  color:#d49131
+}
+
+/* ===========  address ======== */
+
+.address{
+  margin-right: 5rem;
+}
+
+footer{
+  width: 100%;
+  display: flex;
+  align-items: cente;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: #ecf0e1;
+  border-top: 0.1rem solid #000000;
+  margin-top: 5rem;
+}
